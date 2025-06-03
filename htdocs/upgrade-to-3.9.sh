@@ -135,7 +135,7 @@ echo -e "${GREEN}✓ Theme revision updated${NC}"
 # Step 11: Cleanup
 echo -e "\n${YELLOW}[STEP 11] Cleanup...${NC}"
 cd /Applications/MAMP/htdocs
-rm -rf moodle36.temp
+sudo rm -rf moodle36.temp 2>/dev/null || rm -rf moodle36.temp
 rm -f test.php db_test.php 2>/dev/null || true
 echo -e "${GREEN}✓ Cleanup completed${NC}"
 
